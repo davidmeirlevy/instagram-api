@@ -10,6 +10,7 @@ require('./models');
 const app = express();
 const port = 4000;
 
+app.use(express.static('public'));
 app.use(morgan('combined'));
 app.use(cors());
 app.use(cookieParser());
